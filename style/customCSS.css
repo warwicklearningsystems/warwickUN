@@ -145,7 +145,6 @@
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    /*max-width:728px;*/
 
 
 }
@@ -406,6 +405,7 @@ span.pbox.effect6{
         display: block;
         background: #00407A;
         color: white;
+        height: 24px;
     }
     #fontsize_inc,#fontsize_reset ,#fontsize_dec, #sitecolor_color1{
         color: white !important;
@@ -716,6 +716,7 @@ body.editing .activity.label.modtype_label .contentwithoutlink {
     background: #00407A;
     color: #fff;
     z-index: 1031;
+    padding: 0px;
 }
 
 #accessibilitybar .container{
@@ -727,7 +728,8 @@ body.hasaccessibilitybar #accessibilitybar .container {
 }
 
 #nav-drawer {
-    top: 100px;
+    top: 94px!important;
+    height: calc(100% - 144px)!important;
 }
 
 #page {
@@ -740,7 +742,7 @@ body.hasaccessibilitybar #accessibilitybar .container {
 }
 
 nav.navbar {
-    top: 30px;
+    top: 24px!important;
 }
 
 #nav-drawer-footer {
@@ -813,6 +815,10 @@ nav.navbar {
 
 .navbar .navbar-nav .search-box .show input {
     display: block;
+    width: 25%!important;
+    margin-top: 17px;
+    margin-left: 34%;
+    min-width:150px;
 }
 
 #topsearchicon {
@@ -823,7 +829,8 @@ nav.navbar {
 }
 
 .search-box-input-wrapper.show #topsearchicon{
-    margin-top: 2px;
+    margin-top: 17px;
+    margin-left: 34%;
 }
 
 /* Align restrictions to the left */
@@ -950,11 +957,11 @@ body.path-mod .activity-information [data-region="activity-dates"]{
     }
 
     .navbar-nav.custom-menus > *:nth-child(1){
-        top: -20px;
+        top: -21px;
     }
 
     .navbar-nav.custom-menus > *:nth-child(2){
-        top: 30px;
+        top: 28px;
     }
 
     .navbar-nav.custom-menus > *:nth-child(3){
@@ -1067,16 +1074,11 @@ body.path-mod .activity-information [data-region="activity-dates"]{
     .navbar .navbar-nav #id_search_box {
         text-indent: 11px;
         font-size: 14px;
-        padding: 2px 1px 1px 16px;
+        padding: 2px 1px 1px 20px;
     }
 
     .navbar .navbar-nav .search-box-input-wrapper.show .fa-search:before {
         font-size: 17px;
-    }
-
-    .search-box-input-wrapper.show #topsearchicon{
-        margin-top: 1px;
-        margin-left: -1px;
     }
 
     nav.navbar ul.navbar-nav.custom-menus li:not(:first-child),
@@ -1136,17 +1138,9 @@ nav.navbar *:focus-visible{
 
 /* More space below warwick logo bar */
 nav.navbar .navbar-brand .logo img {
-    max-height: 55px;
-    margin-bottom: 14px;
+    max-height: 47px;
+    margin-bottom: 23px;
 }
-
-/* More space below warwick logo bar */
-nav.navbar .navbar-brand .logo img {
-	max-height: 55px;
-	margin-bottom: 15px;
-}
-
-
 
 /* Add labels to side menu mobile */
 
@@ -1232,17 +1226,21 @@ body #nav-drawer .list-group .list-group-item>ul li a:before {
 }
 
 .navbar .navbar-nav .search-box-input-wrapper.show{
+    background-color: #fff;
+    width: 100%;
     position: absolute;
-    right: 1%;
-    top: 25%;
-    width: 50vw;
-    z-index: 999;
+    left: 70px;
+    height: 70px;
+    z-index: 9;
+    top: 0px;
 }
 
 #accessibilitybar .sitecolor a.btn{
-    font-size: 20px!important;	
+    font-size: 15px!important;
     margin-top: -3px;
-    border: 0px;
+    border: 0;
+    border-radius: 0px!important;
+    border: 1px solid #00407A;
 }
 
 #accessibilitybar .fontsize ul li .btn{
@@ -1269,7 +1267,7 @@ body.pagelayout-course .section .availabilityinfo span{
 }
 
 /* Edit mode with toggle switch look */
-#page-header .flex-wrap .singlebutton button.btn,
+body:not(.path-course.course-1.context-1) #page-header .flex-wrap .singlebutton button.btn,
 body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
 {
     background-image: url(/theme/moove/pix/toggleOff.png);
@@ -1300,4 +1298,89 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     background-color: transparent;
     color: #000;
     border: none;
+}
+
+#nav-drawer-footer #themesettings-control {
+    padding: 0.35rem 0;
+}
+
+/* Align warwick logo text with menu text */
+
+ul.navbar-nav.custom-menus{
+    margin-top: 13px;
+}
+
+
+
+/**/
+@media (max-width: 767.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 33%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 33%;
+    }
+}
+
+@media (max-width: 650.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 32%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 32%;
+    }
+}
+
+@media (max-width: 598.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 32%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 32%;
+    }
+}
+
+@media (max-width: 530.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 28%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 28%;
+    }
+}
+
+@media (max-width: 530.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 28%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 28%;
+    }
+}
+
+@media (max-width: 490.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 26%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 26%;
+    }
+}
+
+@media (max-width: 420.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 24%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 24%;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .navbar .navbar-nav .search-box .show input{
+        margin-left: 22%;
+    }
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 22%;
+    }
 }
