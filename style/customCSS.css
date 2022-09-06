@@ -1,0 +1,1303 @@
+
+/*Within HEAD section*/
+
+
+.notifications-box {
+    list-style-type: none;
+}
+
+#nav-drawer [data-key="home"] {
+    display: none!important;
+}
+
+#nav-drawer [data-key="certificates"] {
+    display: none!important;
+}
+
+[data-key="privatefiles"] {
+    display:none;
+}
+
+/* MOO-1612 - grader pagination */
+
+.grade-navigation ~ nav.pagination.pagination-centered.justify-content-center {
+    justify-content: normal!important;
+}
+
+.userbutton .usertext .meta {
+    color: #005C82
+}
+
+/* Template - styles */
+
+.boxstyle_ni div.boxarea {
+    padding: 1em;
+}
+
+.boxstyle_ni h3 {
+    font-size: 1.5em;
+}
+
+.greenbox div.boxback{
+    background:#ecf5ef;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ecf5ef),color-stop(1, #d7edde));
+    background-image: -o-linear-gradient(bottom, #ecf5ef 0%, #d7edde 100%);
+    background-image: -moz-linear-gradient(bottom, #ecf5ef 0%, #d7edde 100%);
+    background-image: -webkit-linear-gradient(bottom, #ecf5ef 0%, #d7edde 100%);
+    background-image: -ms-linear-gradient(bottom, #ecf5ef 0%, #d7edde 100%);
+    background-image: linear-gradient(to bottom, #ecf5ef 0%, #d7edde 100%);
+}
+
+.greenbox div.boxarea {
+    border: 1px #ddf0e3 dotted;
+}
+
+.greenbox h3, .greenbox h4 {
+    color: #5a886c !important;
+    line-height:1.2 !important;
+}
+
+.greybox div.boxback {
+    background:#fafafa;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fafafa),color-stop(1, #f3f3f3));
+    background-image: -o-linear-gradient(bottom, #fafafa 0%, #f3f3f3 100%);
+    background-image: -moz-linear-gradient(bottom, #fafafa 0%, #f3f3f3 100%);
+    background-image: -webkit-linear-gradient(bottom, #fafafa 0%, #f3f3f3 100%);
+    background-image: -ms-linear-gradient(bottom, #fafafa 0%, #f3f3f3 100%);
+    background-image: linear-gradient(to bottom, #fafafa 0%, #f3f3f3 100%);
+}
+
+.greybox div.boxarea {
+    border: 1px #f1f1f1 dotted;
+}
+
+.greybox h3, .greybox h4 {
+    color: #454545 !important;
+    line-height:1.2 !important;
+}
+
+.redbox div.boxback{
+    background:#f8f3f4;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f3f4),color-stop(1, #f5e3e5));
+    background-image: -o-linear-gradient(bottom, #f8f3f4 0%, #f5e3e5 100%);
+    background-image: -moz-linear-gradient(bottom, #f8f3f4 0%, #f5e3e5 100%);
+    background-image: -webkit-linear-gradient(bottom, #f8f3f4 0%, #f5e3e5 100%);
+    background-image: -ms-linear-gradient(bottom, #f8f3f4 0%, #f5e3e5 100%);
+    background-image: linear-gradient(to bottom, #f8f3f4 0%, #f5e3e5 100%);
+}
+
+.redbox div.boxarea {
+    border: 1px #f6e7ea dotted;
+}
+
+.redbox h3, .redbox h4 {
+    color: #b34a5a !important;
+    line-height:1.2 !important;
+}
+
+.orangebox div.boxback{
+    background:#fbf5f2;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fbf5f2),color-stop(1, #faeadf));
+    background-image: -o-linear-gradient(bottom, #fbf5f2 0%, #faeadf 100%);
+    background-image: -moz-linear-gradient(bottom, #fbf5f2 0%, #faeadf 100%);
+    background-image: -webkit-linear-gradient(bottom, #fbf5f2 0%, #faeadf 100%);
+    background-image: -ms-linear-gradient(bottom, #fbf5f2 0%, #faeadf 100%);
+    background-image: linear-gradient(to bottom, #fbf5f2 0%, #faeadf 100%);
+}
+
+.orangebox div.boxarea {
+    border: 1px #f5f5f5 dotted;
+}
+
+.orangebox h3, .orangebox h4 {
+    color: #d27135 !important;
+    line-height:1.2 !important;
+}
+
+.bluebox div.boxback{
+    background:#f3f9fc;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f3f9fc),color-stop(1, #dfeffa));
+    background-image: -o-linear-gradient(bottom, #f3f9fc 0%, #dfeffa 100%);
+    background-image: -moz-linear-gradient(bottom, #f3f9fc 0%, #dfeffa 100%);
+    background-image: -webkit-linear-gradient(bottom, #f3f9fc 0%, #dfeffa 100%);
+    background-image: -ms-linear-gradient(bottom, #f3f9fc 0%, #dfeffa 100%);
+    background-image: linear-gradient(to bottom, #f3f9fc 0%, #dfeffa 100%);
+}
+
+.bluebox div.boxarea {
+    border: 1px #e4f3fb dotted;
+}
+
+.bluebox h3, .bluebox h4 {
+    color: #2287c9 !important;
+    line-height:1.2 !important;
+}
+
+/* Large Image Header
+-------------------------*/
+
+.drop_shadow_head {
+    position:relative;
+    display: block;
+    padding:10px;
+    margin-bottom:1em;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    /*max-width:728px;*/
+
+
+}
+.drop_shadow_head:before,
+.drop_shadow_head:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+
+div.drop_shadow_head{
+    max-width:710px;
+}
+
+
+
+.hideme{
+    display:none;
+}
+
+.boxback{
+    margin-bottom:10px;
+}
+
+#page-mod-page-view .boxback{
+    margin-bottom:20px;
+}
+
+div.boxstyle > div > div {
+    position: relative;
+}
+
+.boxstyle div.boxarea {
+    padding: 1em;
+    border: solid 1px;
+}
+
+.boxstyle h3, .boxstyle h4, .boxstyle h5  {
+    margin-left: 0 !important;
+}
+.boxstyle h3 {
+    font-size: 1.5em;
+    margin-top: 0em; /* adapted for moodle to align to the bottom of icons */
+    margin-bottom: 0.9em; /* adapted for moodle up from 0.5em on sitebuilder */
+    margin-left: 2.3em !important;
+}
+
+.boxstyle .boxtab{
+    background: top left no-repeat;
+    position: absolute;
+    top: -14px;
+    left: 7px;
+    width: 47px;
+    height: 66px;
+}
+
+/* extra bits for font-awesome based bookmarks */
+.boxstyle .boxtab .fa {
+    margin: auto;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 8px;
+}
+
+.boxstyle .boxarea {
+    z-index: 1 !important
+}
+
+div.boxstyle{
+    padding-top:10px;
+    margin:7px 0px;
+}
+
+.editing .sectionname{
+    clear:both;
+}
+
+.drop_shadow_lighter {
+    position:relative;
+    display: block;
+    padding:1em;
+    margin-bottom:1em;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+.drop_shadow_lighter:before,
+.drop_shadow_lighter:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+
+.padbot10{
+    padding-bottom:10px;
+}
+.nopadbot{
+    padding-bottom:0px !important;
+}
+
+span.pbox.effect6{
+    max-width:200px;
+}
+
+#head_cont1{
+    padding:10px 10px 0px 10px;
+    max-width:730px;
+}
+
+#head_cont1 h2, #head_cont1 h2, #head_cont1 h3, #head_cont1 h4{
+    margin-top:0px;
+    line-height:1.2;
+}
+
+#head_cont1 .pbox{
+    max-width:200px;
+}
+
+
+.pbox {
+    background:#FFF;
+    margin:0px;
+    display:inline-block;
+    padding:10px;
+    float:left;
+    margin-bottom:15px;
+    margin-right:15px;
+}
+
+/* Two colums image left
+-------------------------*/
+
+.tmp_textright{
+}
+
+.tmp_imleft{
+    float: left;
+    margin: 0px 15px 10px 0px;
+    max-width:400px;
+}
+
+.greybox_imleft{
+}
+
+.greybox_imleft_wrapper{
+    background:#fafafa;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fafafa),color-stop(1, #fff));
+    background-image: -o-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -moz-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -webkit-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -ms-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: linear-gradient(to bottom, #fafafa 0%, #fff 100%);
+    padding:10px 15px;
+    display:block;
+}
+
+/* Two colums image left
+-------------------------*/
+
+.tmp_textright{
+}
+
+.tmp_imleft{
+    float: left;
+    margin: 0px 15px 10px 0px;
+    max-width:400px;
+}
+
+.greybox_imleft{
+}
+
+.greybox_imleft_wrapper{
+    background:#fafafa;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fafafa),color-stop(1, #fff));
+    background-image: -o-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -moz-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -webkit-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: -ms-linear-gradient(bottom, #fafafa 0%, #fff 100%);
+    background-image: linear-gradient(to bottom, #fafafa 0%, #fff 100%);
+    padding:10px 15px;
+    display:block;
+}
+
+
+/* Lifted Corners for 2.6
+-------------------------*/
+/*.editing  div.drop_shadow_lighter.lifted_bot{
+	margin-top:50px;
+}
+*/
+
+/*div.drop_shadow_lighter.lifted_bot{
+	padding-top:6px;
+}*/
+
+.lifted_bot:before,
+.lifted_bot:after {
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(140, 140, 140, 0.8);
+    -moz-box-shadow:0 15px 10px rgba(140, 140, 140, 0.8);
+    box-shadow:0 15px 10px rgba(140, 140, 140, 0.8);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -ms-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+.lifted_bot:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+}
+
+@media (max-width: 767.98px) {
+    .nav-tabs .nav-link.active, .nav-pills .nav-link.active {
+        background-color: #6C757D!important;
+    }
+
+    div.editor_atto_toolbar{
+        padding: 0 0 20px 0!important;
+    }
+
+    /*if you open the left menu, the scroll down doesn't work on mobile*/
+    body.drawer-open-left, body.drawer-open-right {
+        overflow: inherit;
+    }
+}
+/*related to moove theme*/
+    #top-footer h3,#top-footer > div > div > div.col-md-5.social > div > div.mobilefooter.mb-2 > a ,#top-footer > div > div > div.col-md-5.social > div > div.tool_dataprivacy.mb-2 > a {
+        display: none !important;
+    }
+    #page-wrapper #page{
+        background: white;
+    }
+    .btn btn-outline-info rounded{
+        float: right !important;
+    }
+    #page-footer{
+        display:none !important;
+    }
+    #nav-drawer .list-group .list-group-item a:hover {
+        color: #fff !important;
+    }
+    /*handle color for accessibility line above the header*/
+    body.hasaccessibilitybar #accessibilitybar{
+        display: block;
+        background: #00407A;
+        color: white;
+    }
+    #fontsize_inc,#fontsize_reset ,#fontsize_dec, #sitecolor_color1{
+        color: white !important;
+    }
+    #page-course-view-topics .course-content .section .sectionname{
+        border-color: #02396f5c !important;
+        border-width: 0px 0px 2px 0px !important;
+        letter-spacing: 0em !important;
+        text-align: left !important;
+        margin-left: .50% !important;
+        margin-bottom: 1%;
+    }
+    .section .activity .actions {
+        top: 5.5px !important;
+    }
+    .section-modchooser {
+        clear: both;
+        border: 1px solid;
+        border-radius: 7px;
+        color: #85B5DF;
+        text-align: left;
+        padding: .50%;
+        background: #cfe2f26b;
+    }
+    #changenumsections{
+        text-align: left;
+        border-top: 1px solid #A4B8CB;
+        padding-top: 1%;
+    }
+    nav.navbar .moove-search-input .search-input-form .form-control{
+        width: 50%;
+        float: right;
+        border-color: #02376b24;
+        box-shadow: 0 0 0 0.2rem rgb(2 57 111 / 3%) !important;
+    }
+    /*handle mark as done buttons*/
+    /*handle mark as done in default case*/
+    .btn-outline-info {
+        color: #6a737b;
+        background-color: white;
+        border-color: #6a737b;
+    }
+    /*handle mark as done on hover case*/
+    .btn-outline-info:hover {
+        color: #fff;
+        background-color: #6a737b;
+        border-color: #6a737b;
+    }
+    /*handle done button*/
+    .btn-outline-success {
+        color: white;
+        border-color: #357a32;
+        background: #357a32;
+    }
+
+#sidepreopen-control:before{
+    font-weight: bold ;
+}
+/*handle burger menu background dolor*/
+nav.navbar .drawer-toggle{
+    background-color:  #0070D9;
+}
+/*handle right menu */
+/*hide dark mode button*/
+#sidepre-blocks .blocks-header {
+    padding: 1rem;
+    display: none;
+}
+/*handle margin-top for right side menu*/
+#block-region-side-pre{
+    margin-top: 3%;
+}
+/*Remove white gap on left menu*/
+#nav-drawer.closed .list-group .list-group-item:hover>ul{
+    left: 60px;
+    top: 46.5px;
+}
+
+#nav-drawer.closed .list-group .list-group-item:hover{
+    width: 260px;
+}
+.rounded {
+    min-height: 0px !important;
+}
+
+/*handle accessibility font size for colors icons */
+#accessibilitybar .bars #sitecolor_color2, #accessibilitybar .bars #sitecolor_color3,#accessibilitybar .bars #sitecolor_color4{
+    font-size: smaller;
+}
+/*handle burger menu for left menu*/
+nav.navbar .drawer-toggle .nav-link {
+    margin-top: 9.5%;
+    margin-left: 2px;
+}
+
+#nav-drawer .list-group+.list-group{
+    border: none;
+}
+
+#nav-drawer .list-group.metismenu {
+    margin-left: 0px;
+}
+
+/* handle pages top margin*/
+#page {
+    margin-top: 15px;
+}
+/* handle scroll to top button*/
+
+#scrolltoTOP{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 19px;
+    z-index: 1000;
+    font-size: large;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    cursor: pointer;
+    padding: 11px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#scrolltoToplink {
+    display: none;
+}
+
+#scrolltoTOP > i {
+    color: #00407A;
+}
+
+.drawer-open-right #scrolltoTOP{
+    right: 340px;
+}
+
+a:not([class]):focus{
+    outline: 0.2rem solid transparent;
+    color: white !important;
+    background-color: none !important;
+    box-shadow: none !important;
+}
+.singlebutton button{
+    background: white;
+    color: black;
+}
+img.activityicon {
+    height: 31px;
+    width: 31px;
+    vertical-align: middle;
+}
+/*handle course activity icons size*/
+img.activityicon{
+    height: 31.9px;
+    width: 31.9px
+}
+
+
+
+/*When BODY is opened
+ section*/
+
+a {
+    color: #0F6FC5;
+    text-decoration: none;
+    background-color: transparent;
+}
+#nav-drawer a:hover:not(.dropdown-item) {
+    color:#007DB3!important;
+}
+
+.message-app a:hover{
+    color:#fff!important;
+}
+
+#contentframe {
+    height: 800px!important;
+}
+
+.dropdown-item a:hover{
+    color:#fff !important;
+}
+
+.path-course-view .completionprogress {
+    display: none;
+}
+/*  add style for top blue line*/
+#header-blue-line{
+    height: 8.5px;
+    background: #00407A;
+}
+
+
+
+
+/*When BODY is opened
+ section*/
+
+
+.fp-repo .fp-repo-name {
+    color: #1177d1;
+}
+
+
+
+/* New customizations */
+
+/* Enlarge icons on "Add an activity" panel */
+
+.icon-size-5 .icon {
+    height: 36px!important;
+    width: 36px!important;
+}
+
+/* make activity icons border round to workaround svg bug */
+.icon-size-5 .icon.icon {
+    border-radius: 5px;
+}
+
+.activity img.activityicon {
+    border-radius: 5px;
+}
+
+
+/* fix office icons */
+
+.filemanager .fp-thumbnail img {
+    border: none;
+    border-radius: 5px;
+}
+
+/* Change side menu sections icon */
+
+#nav-drawer .list-group .list-group-item[data-key="course-sections"] a:before {
+    content: url("~/../../../../moove/pix/layout-text-window-reverse.svg");
+    margin-right: 2px;
+}
+
+/* Fix label element (mark as done and arrow move icon) */
+.activity.label.modtype_label .activity-information{
+    margin-top: -29px;
+}
+
+body.editing .activity.label.modtype_label .contentwithoutlink {
+    padding-right: 7%;
+    max-width: 98%;
+    margin-left: 20px;
+    min-height: 60px;
+}
+
+@media (min-width: 1000px) {
+    .section .activity.modtype_label.label .contentwithoutlink {
+        width: 83%;
+    }
+}
+
+@media (min-width: 1550px) {
+    .section .activity.modtype_label.label .contentwithoutlink {
+        width: 87%;
+    }
+}
+
+@media (max-width: 999px) {
+    .section .activity.modtype_label.label .contentwithoutlink {
+        width: 74%;
+    }
+}
+
+/* Align activity icon with title in course page */
+
+#region-main .course-content img.activityicon{
+    vertical-align: middle!important;
+}
+
+#region-main .course-content span.instancename{
+    vertical-align: middle!important;
+}
+
+/* Adjust side menu colors */
+
+#nav-drawer {
+    background-color: #00407A;
+}
+
+#nav-drawer .list-group .list-group-item:hover, #nav-drawer.closed .list-group .list-group-item:hover,
+#nav-drawer .list-group .list-group-item.active, #nav-drawer.closed .list-group .list-group-item:hover>ul{
+    background-color: #0070D9;
+}
+
+#nav-drawer .list-group .collapse.in .list-group-item:hover, #nav-drawer.closed .list-group .list-group-item ul li.list-group-item:hover,
+#nav-drawer.closed .list-group .list-group-item ul li.list-group-item a:hover {
+    background-color: #0063BF;
+}
+
+/* Fix Mark as Done button when activity has open/due date (course page) */
+
+.section .activity [data-region="completion-info"]{
+    text-align: right;
+}
+
+/* Make top access. bar aways visible */
+
+ #accessibilitybar {
+    display: block;
+    background: #00407A;
+    color: #fff;
+    z-index: 1031;
+}
+
+#accessibilitybar .container{
+    display:none;
+}
+
+body.hasaccessibilitybar #accessibilitybar .container {
+    display: block;
+}
+
+#nav-drawer {
+    top: 100px;
+}
+
+#page {
+    margin-top: 70px;
+}
+
+[data-region="blocks-column"], [data-region=right-hand-drawer].drawer {
+    top: 100px;
+    padding-top: 8px;
+}
+
+nav.navbar {
+    top: 30px;
+}
+
+#nav-drawer-footer {
+    z-index: 999;
+}
+
+/* Align label activity with the icons columns */
+
+@media (min-width: 991.98px){
+    .section .activity.modtype_label.label .contentwithoutlink {
+        padding-left: 30px;
+    }
+}
+
+/* Move custom menu dropdown icon closer to text, use sent code */
+
+.custom-menus .dropdown-toggle::after {
+    margin-left: 0.01em;
+}
+
+/* 5. Change color when hover activity restriction on Course page */
+.availabilityinfo a:hover:not(.dropdown-item) {
+    color: #fff!important;
+    background-color: transparent!important;
+}
+
+/* 6. Check when clicking links (ie breadcrumbs) the link/text turns white */
+#page-navbar .breadcrumb li>* {
+    color: #2c3f4c !important;
+}
+
+/* also removes some ugly effects when clicking an activity */
+.activityinstance>a:focus {
+     background-color: transparent!important;
+     box-shadow: none;
+}
+
+/* CSS for the search box */
+
+.navbar .navbar-nav .search-box {
+    margin: auto;
+}
+
+.navbar .navbar-nav .search-box-input-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .navbar-nav .search-box-input-wrapper .fa-search {
+    position: relative;
+}
+
+.navbar .navbar-nav .search-box-input-wrapper .fa-search:before {
+    content: "\e090";
+    font-family: "simple-line-icons";
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .search-box input {
+    text-indent: 32px;
+    display: none;
+}
+
+.navbar .navbar-nav .search-box-input-wrapper.show .fa-search {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.navbar .navbar-nav .search-box .show input {
+    display: block;
+}
+
+#topsearchicon {
+    font-size: 1.4rem;
+    margin-right: 24px;
+    color: #00407A;
+    margin-top: 5px;
+}
+
+.search-box-input-wrapper.show #topsearchicon{
+    margin-top: 2px;
+}
+
+/* Align restrictions to the left */
+
+body.pagelayout-course .section .badge.badge-info{
+    text-align: left;
+}
+
+
+/* Hide content bank  and private files from left menu*/
+
+#nav-drawer [data-key="privatefiles"] {
+    display: none!important;
+}
+
+#nav-drawer [data-key="contentbank"] {
+    display: none!important;
+}
+
+
+/* Fix restricted activities not aligned with the other activities icons */
+
+.section .activity .activityinstance div.dimmed{
+    padding-left: 31px;
+}
+
+/* When in an activity, move Mark as Done/Done to under the activity title */
+body.path-mod .activity-information [data-region="activity-dates"]{
+    float: right;
+}
+
+/* Fix some text on access. bar turning black when resizing */
+#fontsize_inc, #fontsize_reset, #fontsize_dec, #sitecolor_color1 {
+    color: white!important;
+}
+
+
+/*1. Polish top/custom menu when resizing/phone size. Also make it aways visible.*/
+@media (min-width: 1201px) {
+
+    .navbar-nav.custom-menus > *:nth-child(1){
+        display: none!important;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(2), .navbar-nav.custom-menus > *:nth-child(3),
+    .navbar-nav.custom-menus > *:nth-child(4), .navbar-nav.custom-menus > *:nth-child(5),
+    .navbar-nav.custom-menus > *:nth-child(6),.navbar-nav.custom-menus > *:nth-child(7){
+        display: list-item!important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    nav.navbar ul.navbar-nav.custom-menus .dropdown-item > a{
+        color: #0f6cbf;
+    }
+
+    nav.navbar ul.navbar-nav.custom-menus .nav-item > *{
+        box-shadow: none;
+    }
+
+    nav.navbar .custom-menus .nav-item:hover:not(:first-child) > a{
+        color: white!important;
+    }
+
+    .navbar-light .navbar-nav .show>.nav-link{
+        color:white!important;
+        background-color: #0f6cbf;
+    }
+
+    .navbar-light .navbar-nav > .show{
+        color:white!important;
+        background-color: #0f6cbf;
+    }
+
+    .custom-menus .nav-item:active, .custom-menus .nav-item:hover,
+    .custom-menus .nav-item:focus, .custom-menus .nav-item:focus-within {
+        outline: 0;
+        background-color: #0f6cbf;
+        color: #fff;
+    }
+
+    .custom-menus > *:active, .custom-menus > *:hover,
+    .custom-menus > *:focus, .custom-menus  > *:focus-within {
+        outline: 0;
+        background-color: #0f6cbf;
+        color: #fff;
+    }
+    .custom-menus .nav-item a:active, .custom-menus .nav-item a:hover,
+    .custom-menus .nav-item a:focus, .custom-menus .nav-item a:focus-within {
+        outline: 0;
+        background-color: #0f6cbf;
+        color: #fff;
+    }
+
+    nav.navbar ul.navbar-nav.custom-menus li, nav.navbar ul.navbar-nav.custom-menus .nav-item{
+        display: none;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(1)::after {
+        position: relative;
+        left: 44px;
+        bottom: 10px;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+        color: #1e88e5;
+    }
+
+    ul.navbar-nav.custom-menus{
+        position: relative;
+        display: block!important;
+    }
+
+    .navbar-nav.custom-menus > *{
+        position: absolute;
+        padding: 10px;
+        min-width: 175px;
+        left: 25px;
+        background-color: white;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(1){
+        top: -20px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(2){
+        top: 30px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(3){
+        top: 70px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(4){
+        top: 110px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(5){
+        top: 150px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(6){
+        top: 190px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(7){
+        top: 230px;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(8){
+        top: 270px;
+    }
+    .navbar-nav.custom-menus > *:nth-child(9){
+        top: 310px;
+    }
+    .navbar-nav.custom-menus .dropdown-menu {
+        left: 175px;
+        top: -2px;
+        border: transparent;
+    }
+
+    .custom-menus .dropdown-toggle::after{
+        transform: rotate(270deg) translate(-10%,10%);
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(1){
+        display: list-item!important;
+        height: 50px;
+        background-color: white!important;
+        color: #1e88e5!important;
+    }
+
+    .navbar-nav.custom-menus > *:nth-child(1):hover {
+        background-color: white!important;
+        color: #1e88e5;
+    }
+
+    nav.navbar .custom-menus .nav-item:first-child:hover > a {
+        color: #1e88e5!important;
+        background-color: white!important;
+    }
+
+    nav.navbar .custom-menus .nav-item:first-child:focus-within > a {
+        color: #1e88e5!important;
+        background-color: white!important;
+    }
+}
+
+/*3. Review "Dyslexic Friendly font" doesnt... (check Trello image)*/
+.odafont {
+    font-size: 80%;
+}
+
+/* Fix cards content cross with the header */
+#gridshadebox_content{
+    margin-top: 40px;
+}
+
+/*4.1 the search box on small screens crosses with the menu. 4.2  on small screens when you click on search icon search*/
+
+@media (max-width: 600px) {
+
+    .navbar-nav.custom-menus .dropdown-toggle::after{
+        margin-left: 0px;
+    }
+
+    .navbar-nav.custom-menus .caret{
+        margin-left: 0px;
+    }
+
+    nav.navbar ul.navbar-nav .popover-region .popover-region-toggle {
+        width: 35px;
+    }
+
+    .navbar-nav #topsearchicon {
+        margin-right: 3px;
+    }
+
+    nav.navbar .custom-menus .nav-item:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .navbar-nav.custom-menus>* {
+        left: 0px;
+        min-width: 145px;
+    }
+
+    .navbar-nav img.userpicture {
+        margin-right: 0px;
+    }
+
+    .navbar-nav  .search-box {
+        max-width: 30%;
+        margin-right: 0px!important;
+    }
+
+    .navbar .navbar-nav #id_search_box {
+        text-indent: 11px;
+        font-size: 14px;
+        padding: 2px 1px 1px 16px;
+    }
+
+    .navbar .navbar-nav .search-box-input-wrapper.show .fa-search:before {
+        font-size: 17px;
+    }
+
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-top: 1px;
+        margin-left: -1px;
+    }
+
+    nav.navbar ul.navbar-nav.custom-menus li:not(:first-child),
+    nav.navbar ul.navbar-nav.custom-menus .nav-item:not(:first-child){
+        left: -15px;
+    }
+
+    .navbar-nav.custom-menus .dropdown-menu{
+        left: 140px;
+    }
+}
+
+nav.navbar.action-menu {
+    white-space: unset;
+    outline: none;
+}
+
+nav.navbar *:focus-visible{
+    white-space: unset;
+    outline: none;
+}
+
+
+/*"Font Size" on mobile, appears out of space*/
+@media (max-width: 440px) {
+    #accessibilitybar .container span {
+        font-size: 13px!important;
+        margin: auto!important;
+    }
+
+    #accessibilitybar .container li {
+        margin-left: 0.35rem!important;
+    }
+
+    #accessibilitybar .bars ul li .btn{
+        border: 0px!important;
+    }
+
+    #accessibilitybar .container{
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+}
+
+/* Side menu carrot facing wrong side */
+#nav-drawer .metismenu .has-arrow::after {
+    -webkit-transform: rotate(-225deg) translate(0,-50%);
+    transform: rotate(-225deg) translate(0,-50%);
+}
+
+/* Open right side blocks area button and icon is too low */
+
+#sidepreopen-control {
+    top: 47%;
+    padding: 6px 0 0 4px;
+}
+
+/* More space below warwick logo bar */
+nav.navbar .navbar-brand .logo img {
+    max-height: 55px;
+    margin-bottom: 14px;
+}
+
+/* More space below warwick logo bar */
+nav.navbar .navbar-brand .logo img {
+	max-height: 55px;
+	margin-bottom: 15px;
+}
+
+
+
+/* Add labels to side menu mobile */
+
+@media (max-width: 767px){
+	body.drawer-open-left #nav-drawer .list-group .list-group-item a .text {
+		display: inline!important;
+		max-width: 255px;
+	}
+
+	body.drawer-open-left #nav-drawer {
+	  width: 245px!important;
+  }
+
+  body.drawer-open-left #nav-drawer .list-group .list-group-item:hover, #nav-drawer.closed .list-group .list-group-item:hover, #nav-drawer .list-group .list-group-item.active, #nav-drawer.closed .list-group .list-group-item:hover>ul {
+	background-color: #0070D9!important;
+}
+body.drawer-open-left #nav-drawer-footer {
+	width: 245px;
+}
+body.drawer-open-left .metismenu [data-key="course-sections"], .metismenu [data-key="mycourses"] {
+	display: inline;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul {
+	display: inline;
+	height: auto;
+	overflow: auto;
+	background-color: #0070D9;
+	position: inherit;
+	left: 0px;
+	top: 0px;
+	width: auto;
+	z-index: 1001;
+	padding-top: 0px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 0px;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item>ul {
+	padding: 0px!important;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul li {
+ min-height: 50px;
+ padding: 0 0 0 0.5rem;
+ background-color: inherit;
+ border-radius: 0;
+ border: 0; 
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul li a {
+	color: #fff;
+	padding: 0.75rem 0.75rem;
+	border: none;
+	text-decoration: none;
+	width: 100%;
+	display: inherit;
+	border-radius: 0;
+	font-size: 14.75px!important;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item>ul li {
+    padding: 0 0 0 0.5rem;
+    border: 0;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item>ul li a {
+    padding: 0.75rem 0.75rem;
+    width: 100%;
+    font-size: 14.75px!important;
+}
+
+body.drawer-open-left #nav-drawer .list-group .list-group-item:hover .has-arrow::after{
+    transform: rotate(-135deg) translate(0,-50%);
+}
+
+body #nav-drawer .list-group .list-group-item>ul li a:before {
+    font-size: 12px;
+    content: "\e606"!important;
+}
+
+}
+
+.navbar .navbar-nav .search-box-input-wrapper.show{
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    width: 50vw;
+    z-index: 999;
+}
+
+#accessibilitybar .sitecolor a.btn{
+    font-size: 20px!important;	
+    margin-top: -3px;
+    border: 0px;
+}
+
+#accessibilitybar .fontsize ul li .btn{
+    padding: 0 0 .4rem;
+}
+
+/* Remove boldness from restriction criteria */
+body.pagelayout-course .section .availabilityinfo .badge strong, 
+body.pagelayout-course .section .availabilityinfo span{
+    font-weight: 600;
+}
+
+/* Change Add a block icon */
+#nav-drawer .list-group .list-group-item[data-key="addblock"] a:before {
+    content: url("~/../../../../moove/pix/addABlock.svg");
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(335deg) brightness(104%) contrast(102%);
+    position: relative;
+    top: 3px;    
+}
+
+/* Change accessability report icon */
+#nav-drawer .list-group .list-group-item[data-key="key_report_allylti"] a:before {
+    content: url("~/../../../../moove/pix/accessabilityReport.svg");   
+}
+
+/* Edit mode with toggle switch look */
+#page-header .flex-wrap .singlebutton button.btn,
+body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
+{
+    background-image: url(/theme/moove/pix/toggleOff.png);
+    background-size: 38px 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 44px;
+    border: none;
+}
+
+.editing #page-header .flex-wrap .singlebutton button.btn,
+.editing #page .admininfos .breadcrumb-button .singlebutton:nth-child(2) button.btn{
+    background-image: url(/theme/moove/pix/toggleOn.png);
+    background-size: 38px 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 44px;
+    border: none;
+}
+
+#page-header .flex-wrap .singlebutton button.btn:hover, 
+#page-header .flex-wrap .singlebutton button.btn:active,
+#page-header .flex-wrap .singlebutton button.btn:focus,
+#page .admininfos .breadcrumb-button .singlebutton button.btn:hover,
+#page .admininfos .breadcrumb-button .singlebutton button.btn:active,
+#page .admininfos .breadcrumb-button .singlebutton button.btn:focus
+{
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
