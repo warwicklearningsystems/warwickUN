@@ -57,6 +57,13 @@ define(['jquery', 'core/modal_factory', 'theme_moove/themesettings_modal'],
          * @method registerEventListeners
          */
         ThemeSettings.prototype.registerEventListeners = function() {
+            document.getElementById("nav-drawer-footer")
+                .addEventListener("keyup", function(e) {
+                    if (e.keyCode === 13) {
+                        $(SELECTORS.TOGGLE_REGION).click();
+                    }
+                });
+
             $(SELECTORS.TOGGLE_REGION).click(function(e) {
                 this.openThemeSettings(e);
                 e.preventDefault();
