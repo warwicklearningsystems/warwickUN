@@ -57,15 +57,16 @@
 
             {{{ output.search_box }}}
         </div>
-                                        <div class="search-box">
-                                            <form class="search-input-form expanded" action="/course/search.php" >
-                                                <label for="id_search_box" class="accesshide">Enter your search query</label>
-                                                <div class="search-box-input-wrapper">
-                                                    <span id="topsearchicon" class="icon fa fa-search fa-fw" title="Search" aria-label="Search"></span>
-                                                    <input name="search" placeholder="Search..." size="20" tabindex="-1" id="id_search_box" class="form-control" type="text">
-                                                </div>
-                                            </form>
-                                        </div>
+        <div class="search-box" tabindex="0">
+            <form class="search-input-form expanded" action="/course/search.php">
+                <label for="id_search_box" class="accesshide">Enter your search query</label>
+                <div class="search-box-input-wrapper">
+                    <span id="topsearchicon" class="icon fa fa-search fa-fw" title="Search" aria-label="Search"></span>
+                    <input name="search" placeholder="Search..." size="20" tabindex="-1" id="id_search_box"
+                           class="form-control" type="text">
+                </div>
+            </form>
+        </div>
 
         <li class="nav-item lang-menu">
             {{{ output.render_lang_menu }}}
