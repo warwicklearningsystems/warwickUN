@@ -1301,6 +1301,7 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     color: #000;
     border: none;
 }
+
 @media (min-width: 992px) {
     #page-calendar-view #page-wrapper {
         position: relative;
@@ -1310,4 +1311,9 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
         left: 0;
         right: 0;
     }
+}
+
+.search-box:focus-visible{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%);
 }
