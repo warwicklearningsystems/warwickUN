@@ -816,9 +816,9 @@ nav.navbar {
 .navbar .navbar-nav .search-box .show input {
     display: block;
     width: 25%!important;
-    margin-top: 17px;
+    margin-top: 20px;
     margin-left: 34%;
-    min-width:150px;
+    min-width: 150px;
 }
 
 #topsearchicon {
@@ -829,9 +829,10 @@ nav.navbar {
 }
 
 .search-box-input-wrapper.show #topsearchicon{
-    margin-top: 17px;
     margin-left: 34%;
+    margin-top: 21px;
 }
+
 
 /* Align restrictions to the left */
 
@@ -1164,22 +1165,6 @@ body.drawer-open-left .metismenu [data-key="course-sections"], .metismenu [data-
 	display: inline;
 }
 
-body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul {
-	display: inline;
-	height: auto;
-	overflow: auto;
-	background-color: #0070D9;
-	position: inherit;
-	left: 0px;
-	top: 0px;
-	width: auto;
-	z-index: 1001;
-	padding-top: 0px;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	padding: 0px;
-}
-
 body.drawer-open-left #nav-drawer .list-group .list-group-item>ul {
 	padding: 0px!important;
 }
@@ -1212,10 +1197,6 @@ body.drawer-open-left #nav-drawer .list-group .list-group-item>ul li a {
     padding: 0.75rem 0.75rem;
     width: 100%;
     font-size: 14.75px!important;
-}
-
-body.drawer-open-left #nav-drawer .list-group .list-group-item:hover .has-arrow::after{
-    transform: rotate(-135deg) translate(0,-50%);
 }
 
 body #nav-drawer .list-group .list-group-item>ul li a:before {
@@ -1278,7 +1259,7 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     border: none;
 }
 
-.editing #page-header .flex-wrap .singlebutton button.btn,
+body:not(.path-course.course-1.context-1) .editing #page-header .flex-wrap .singlebutton button.btn,
 .editing #page .admininfos .breadcrumb-button .singlebutton:nth-child(2) button.btn{
     background-image: url(/theme/moove/pix/toggleOn.png);
     background-size: 38px 20px;
@@ -1312,75 +1293,60 @@ ul.navbar-nav.custom-menus{
 
 
 
-/**/
+/* Adjust searchbox */
+
 @media (max-width: 767.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 33%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 33%;
     }
 }
 
 @media (max-width: 650.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 32%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 32%;
     }
 }
 
 @media (max-width: 598.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 32%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
-        margin-left: 32%;
+        margin-left: 31%;
     }
 }
 
 @media (max-width: 530.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 28%;
-    }
-    .search-box-input-wrapper.show #topsearchicon{
-        margin-left: 28%;
-    }
-}
-
-@media (max-width: 530.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 28%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 28%;
     }
 }
 
 @media (max-width: 490.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 26%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 26%;
     }
 }
 
 @media (max-width: 420.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 24%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 24%;
     }
 }
 
 @media (max-width: 400.98px) {
-    .navbar .navbar-nav .search-box .show input{
-        margin-left: 22%;
-    }
+    .navbar .navbar-nav .search-box .show input,
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 22%;
+    }
+}
+
+@media (max-width: 351.98px) {
+    .navbar .navbar-nav .search-box .show input,
+    .search-box-input-wrapper.show #topsearchicon{
+        margin-left: 17%;
     }
 }

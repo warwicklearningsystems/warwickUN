@@ -102,18 +102,7 @@
             }
 
             > ul {
-              display: block;
-              height: auto;
-              overflow: auto;
-              background-color: $navbar-bg;
-              position: absolute;
-              left: 60px;
-              top: 45px;
-              width: 200px;
-              z-index: 1001;
-              padding-top: 10px;
-              border-bottom-left-radius: $card-border-radius;
-              border-bottom-right-radius: $card-border-radius;
+
 
               li {
                 padding: .5rem .2rem;
