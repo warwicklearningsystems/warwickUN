@@ -1317,3 +1317,14 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%);
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 10px #000 inset;
+    border-radius: 4px;
+}
