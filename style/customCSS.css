@@ -1195,7 +1195,7 @@ body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul li {
  padding: 0 0 0 0.5rem;
  background-color: inherit;
  border-radius: 0;
- border: 0; 
+ border: 0;
 }
 
 body.drawer-open-left #nav-drawer .list-group .list-group-item:hover>ul li a {
@@ -1240,7 +1240,7 @@ body #nav-drawer .list-group .list-group-item>ul li a:before {
 }
 
 #accessibilitybar .sitecolor a.btn{
-    font-size: 20px!important;	
+    font-size: 20px!important;
     margin-top: -3px;
     border: 0px;
 }
@@ -1250,7 +1250,7 @@ body #nav-drawer .list-group .list-group-item>ul li a:before {
 }
 
 /* Remove boldness from restriction criteria */
-body.pagelayout-course .section .availabilityinfo .badge strong, 
+body.pagelayout-course .section .availabilityinfo .badge strong,
 body.pagelayout-course .section .availabilityinfo span{
     font-weight: 600;
 }
@@ -1260,12 +1260,12 @@ body.pagelayout-course .section .availabilityinfo span{
     content: url("~/../../../../moove/pix/addABlock.svg");
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(335deg) brightness(104%) contrast(102%);
     position: relative;
-    top: 3px;    
+    top: 3px;
 }
 
 /* Change accessability report icon */
 #nav-drawer .list-group .list-group-item[data-key="key_report_allylti"] a:before {
-    content: url("~/../../../../moove/pix/accessabilityReport.svg");   
+    content: url("~/../../../../moove/pix/accessabilityReport.svg");
 }
 
 /* Edit mode with toggle switch look */
@@ -1290,7 +1290,7 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     border: none;
 }
 
-#page-header .flex-wrap .singlebutton button.btn:hover, 
+#page-header .flex-wrap .singlebutton button.btn:hover,
 #page-header .flex-wrap .singlebutton button.btn:active,
 #page-header .flex-wrap .singlebutton button.btn:focus,
 #page .admininfos .breadcrumb-button .singlebutton button.btn:hover,
@@ -1316,4 +1316,22 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
 .search-box:focus-visible{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6a737b;
+    border-radius: 20px;
+    border: 3px solid #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #495057;
 }
