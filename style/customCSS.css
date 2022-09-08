@@ -648,34 +648,28 @@ a {
 }
 
 /* Fix label element (mark as done and arrow move icon) */
+
 .activity.label.modtype_label .activity-information{
     margin-top: -29px;
 }
 
-body.editing .activity.label.modtype_label .contentwithoutlink {
-    padding-right: 7%;
-    max-width: 98%;
-    margin-left: 20px;
-    min-height: 60px;
+.section .activity.modtype_label.label .contentwithoutlink {
+    padding-top: 35px;
+    padding-right: 0px!important;
 }
 
-@media (min-width: 1000px) {
-    .section .activity.modtype_label.label .contentwithoutlink {
-        width: 83%;
-    }
+body:not(.editing) .section .activity.modtype_label.label .contentwithoutlink {
+    padding-top: 5px;
 }
 
-@media (min-width: 1550px) {
-    .section .activity.modtype_label.label .contentwithoutlink {
-        width: 87%;
-    }
+.editing .section .activity .contentwithoutlink{
+    padding-right: 0px;
 }
 
-@media (max-width: 999px) {
-    .section .activity.modtype_label.label .contentwithoutlink {
-        width: 74%;
-    }
+.section .activity.modtype_label.label .activity-information{
+    padding-top: 30px;
 }
+
 
 /* Align activity icon with title in course page */
 
@@ -1259,7 +1253,7 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     border: none;
 }
 
-body:not(.path-course.course-1.context-1) .editing #page-header .flex-wrap .singlebutton button.btn,
+body:not(.path-course.course-1.context-1).editing #page-header .flex-wrap .singlebutton button.btn,
 .editing #page .admininfos .breadcrumb-button .singlebutton:nth-child(2) button.btn{
     background-image: url(/theme/moove/pix/toggleOn.png);
     background-size: 38px 20px;
@@ -1349,4 +1343,25 @@ ul.navbar-nav.custom-menus{
     .search-box-input-wrapper.show #topsearchicon{
         margin-left: 17%;
     }
+}
+
+
+/* Fix underline when hover links */
+
+a:hover {
+    text-underline-offset: 3px;
+}
+
+.btn-link:hover {
+    text-underline-offset: 3px;
+}
+
+body.pagelayout-course #region-main .modtype_label a:not(.btn) {
+  text-underline-offset: 3px;
+}
+
+/* Fix Breadcrumb trail overlaps editing pop-up */
+
+#dndupload-status{
+    z-index: 3;
 }
