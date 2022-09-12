@@ -731,8 +731,12 @@ body.hasaccessibilitybar #accessibilitybar .container {
 }
 
 [data-region="blocks-column"], [data-region=right-hand-drawer].drawer {
-    top: 100px;
+    top: 95px;
     padding-top: 8px;
+}
+
+[data-region="blocks-column"]{
+    height: calc(100% - 100px);
 }
 
 nav.navbar {
@@ -1495,4 +1499,18 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 
 #page-site-index.path-site.pagelayout-frontpage .plugins_standard_footer_html{
     display: none;
+}
+
+/* New Grade icon */
+
+#nav-drawer .list-group .list-group-item[data-key="grades"] a:before{
+    content: url(/theme/moove/pix/tableFA.svg);
+    position: relative;
+    top: 3px;
+}
+
+.gradeparent .action-icon i.slicon-book-open:before{
+    content: url(/theme/moove/pix/tableFAblue.svg);
+    position: relative;
+    top: 3px;
 }
