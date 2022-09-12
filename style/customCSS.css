@@ -401,12 +401,16 @@ span.pbox.effect6{
         color: #fff !important;
     }
     /*handle color for accessibility line above the header*/
+
+    #accessibilitybar{
+        height: 24px;
+    }
     body.hasaccessibilitybar #accessibilitybar{
         display: block;
         background: #00407A;
         color: white;
-        height: 24px;
     }
+
     #fontsize_inc,#fontsize_reset ,#fontsize_dec, #sitecolor_color1{
         color: white !important;
     }
@@ -1410,14 +1414,14 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
     width: 75%;
     display: block;
     margin: auto;
-    padding-top: 0.5%;
+    padding-top: 1.5%;
 }
 
 #page-site-index.path-site.pagelayout-frontpage .frontpage-moodle-img-card {
     width: 50%;
     display: block;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 9%;
 }
 
 #page-site-index.path-site.pagelayout-frontpage #page {
@@ -1437,7 +1441,7 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 #page-site-index.path-site.pagelayout-frontpage #loginbox #boxForm{
     background-color: transparent;
     border: none;
-    max-width: 25%;
+    max-width: 22%;
     padding: 0px;
     box-shadow: 0px 4px 3px 1px grey;
     height: 100%;
@@ -1447,8 +1451,8 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 #page-site-index.path-site.pagelayout-frontpage #loginbox{
     opacity: 1;
     top: 100%;
-    -ms-transform: translateY(13vw);
-    transform: translateY(13vw);
+    -ms-transform: translateY(18.7vw);
+    transform: translateY(18.7vw);
 }
 
 #page-site-index.path-site.pagelayout-frontpage .logoCSS {
@@ -1513,4 +1517,8 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
     content: url(/theme/moove/pix/tableFAblue.svg);
     position: relative;
     top: 3px;
+}
+
+body.hasaccessibilitybar:not(.notloggedin) [data-region="blocks-column"], body.hasaccessibilitybar:not(.notloggedin) [data-region=right-hand-drawer].drawer {
+    top: 95px;
 }
