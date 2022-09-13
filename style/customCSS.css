@@ -374,8 +374,8 @@ span.pbox.effect6{
 #page-site-index.path-site.pagelayout-frontpage #loginbox{
     opacity: 1;
     top: 100%;
-    -ms-transform: translateY(18.7vw);
-    transform: translateY(18.7vw);
+    -ms-transform: translateY(13.7vw);
+    transform: translateY(13.7vw);
 }
 
 @media (max-width: 875px) {
