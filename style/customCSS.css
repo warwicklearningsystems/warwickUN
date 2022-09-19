@@ -529,10 +529,6 @@ nav.navbar .drawer-toggle .nav-link {
     margin-left: 0px;
 }
 
-/* handle pages top margin*/
-#page {
-    margin-top: 15px;
-}
 /* handle scroll to top button*/
 
 #scrolltoTOP{
@@ -750,13 +746,10 @@ body.hasaccessibilitybar #accessibilitybar .container {
     height: calc(100% - 144px)!important;
 }
 
-#page {
-    margin-top: 70px;
-}
-
 [data-region="blocks-column"], [data-region=right-hand-drawer].drawer {
-    top: 95px;
+    top: 94px;
     padding-top: 8px;
+    height: calc(100vh - 100px);
 }
 
 nav.navbar {
@@ -1411,6 +1404,33 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 
 #dndupload-status{
     z-index: 3;
+}
+
+/* Pages scroll hidden behind top menu and double scroll bars */
+#page-wrapper{
+    margin-top: 94px!important;
+    overflow-y: auto!important;
+    height: calc(100vh - 100px)!important;
+}
+
+#page{
+    margin-top: 0px;
+    padding-top: 10px!important;
+    overflow-y: auto;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+@media (max-width: 992px) {
+    #page-wrapper{
+        height: 100vh!important;
+    }
+}
+
+html {
+    overflow-y: hidden;
 }
 
 /* Login (front page) page */
