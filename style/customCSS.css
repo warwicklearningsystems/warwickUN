@@ -1452,8 +1452,9 @@ html {
 #page-site-index.path-site.pagelayout-frontpage #page {
     padding: 0;
     background-color: #edf5f8;
-    margin-top: 72px;
-    height: calc(100vh - 72px);
+    margin-top: 0px;
+    padding-top: 0px!important;
+    height: calc(100vh - 100px);
 }
 
 #top-footer{
