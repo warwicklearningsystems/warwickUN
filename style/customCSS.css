@@ -659,7 +659,7 @@ a {
 /* Change side menu sections icon */
 
 #nav-drawer .list-group .list-group-item[data-key="course-sections"] a:before {
-    content: url("~/../../../../moove/pix/layout-text-window-reverse.svg");
+    content: url("/theme/moove/pix/layout-text-window-reverse.svg");
     margin-right: 2px;
 }
 
@@ -1247,7 +1247,7 @@ body.pagelayout-course .section .availabilityinfo span{
 
 /* Change Add a block icon */
 #nav-drawer .list-group .list-group-item[data-key="addblock"] a:before {
-    content: url("~/../../../../moove/pix/addABlock.svg");
+    content: url("/theme/moove/pix/addABlock.svg");
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(335deg) brightness(104%) contrast(102%);
     position: relative;
     top: 3px;
@@ -1255,7 +1255,7 @@ body.pagelayout-course .section .availabilityinfo span{
 
 /* Change accessability report icon */
 #nav-drawer .list-group .list-group-item[data-key="key_report_allylti"] a:before {
-    content: url("~/../../../../moove/pix/accessabilityReport.svg");
+    content: url("/theme/moove/pix/accessabilityReport.svg");
 }
 
 /* Edit mode with toggle switch look */
@@ -1517,7 +1517,7 @@ html {
 
 @media (max-width: 650px) {
     #page-site-index.path-site.pagelayout-frontpage #page-header {
-        background-image: url("~/../../../../moove/pix/occulus_front_slider_masterMOBILE.jpg");
+        background-image: url("/theme/moove/pix/occulus_front_slider_masterMOBILE.jpg");
     }
 
     #page-site-index.path-site.pagelayout-frontpage .navbar .d-none{
@@ -1532,13 +1532,13 @@ html {
 /* New Grade icon */
 
 #nav-drawer .list-group .list-group-item[data-key="grades"] a:before{
-    content: url("~/../../../../moove/pix/tableFA.svg");
+    content: url("/theme/moove/pix/tableFA.svg");
     position: relative;
     top: 3px;
 }
 
 .gradeparent .action-icon i.slicon-book-open:before{
-    content: url("~/../../../../moove/pix/tableFAblue.svg");
+    content: url("/theme/moove/pix/tableFAblue.svg");
     position: relative;
     top: 3px;
 }
