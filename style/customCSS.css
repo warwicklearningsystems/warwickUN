@@ -869,11 +869,6 @@ body.pagelayout-course .section .badge.badge-info{
     padding-left: 31px;
 }
 
-/* When in an activity, move Mark as Done/Done to under the activity title */
-body.path-mod .activity-information [data-region="activity-dates"]{
-    float: right;
-}
-
 /* Fix some text on access. bar turning black when resizing */
 #fontsize_inc, #fontsize_reset, #fontsize_dec, #sitecolor_color1 {
     color: white!important;
@@ -1579,7 +1574,9 @@ body.path-mod.path-mod-book.drawer-open-right {
     margin-right: 0px;
 }
 
-#page-my-index.path-my.pagelayout-mydashboard.editing #page-header .flex-wrap .singlebutton:nth-child(1) button.btn{
+/* Fix buttons that turned into switches */
+#page-my-index.path-my.pagelayout-mydashboard.editing #page-header .flex-wrap .singlebutton:nth-child(1) button.btn,
+#page-course-index-category.path-course-index.pagelayout-coursecategory #page-header .flex-wrap .singlebutton button.btn    {
     color: #000;
     font-weight: 400;
     line-height: 1.5;
@@ -1588,4 +1585,23 @@ body.path-mod.path-mod-book.drawer-open-right {
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
     margin: 0;
     background-image: none;
+}
+
+
+/* Starring courses */
+.block_warwick_course_list.block .dropdown-item:hover,
+.block_warwick_course_list.block .dropdown-item:focus {
+    background: transparent;
+}
+
+.block_warwick_course_list.block .dropdown-item.empty-star-icon:hover {
+    color: #d6d6d6;
+    background: transparent;
+}
+
+/* Can't access chat message box */
+@media (max-width: 500px) {
+    .drawer .message-app {
+        height: calc(100% - 94px);
+    }
 }

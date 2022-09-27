@@ -19,6 +19,11 @@ document.getElementById('page-wrapper').onscroll = function() {
  
 /*handle the top bar search action */
 require(['jquery'], function($) {
+
+$('#scrolltoToplink').click(function() {
+          $('#page-wrapper').scrollTop(0);
+        });
+
     $('#topsearchicon').click(function() {
         $('.search-box-input-wrapper').addClass('show');
         $('#id_search_box').focus();
