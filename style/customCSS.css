@@ -1268,6 +1268,7 @@ body:not(.editing) #page .admininfos .breadcrumb-button .singlebutton button.btn
     background-position: right;
     padding-right: 44px;
     border: none;
+    background-color: transparent;
 }
 
 body:not(.path-course.course-1.context-1).editing #page-header .flex-wrap .singlebutton button.btn,
@@ -1278,6 +1279,7 @@ body:not(.path-course.course-1.context-1).editing #page-header .flex-wrap .singl
     background-position: right;
     padding-right: 44px;
     border: none;
+    background-color: transparent;
 }
 
 #page-header .flex-wrap .singlebutton button.btn:hover,
@@ -1290,6 +1292,11 @@ body:not(.path-course.course-1.context-1).editing #page-header .flex-wrap .singl
     background-color: transparent;
     color: #000;
     border: none;
+}
+
+body.editing #page .admininfos .breadcrumb-button .singlebutton:nth-child(1) button.btn:hover,
+body.editing #page .admininfos .breadcrumb-button .singlebutton:nth-child(1) button.btn:focus {
+    border: 1px solid #ced4da;
 }
 
 .search-box:focus-visible{
@@ -1551,4 +1558,34 @@ body.hasaccessibilitybar:not(.notloggedin) [data-region="blocks-column"], body.h
 
 .path-course.path-course-view .usertour{
     display: none;
+}
+
+body.hasaccessibilitybar:not(.notloggedin) #page {
+    margin-top: 0px;
+}
+
+
+/* Up arrow icons do not match down icons */
+
+.slicon-arrow-up:before {
+    content: "\f062";
+    font-family: FontAwesome;
+}
+
+
+/* Moodle book display problems */
+
+body.path-mod.path-mod-book.drawer-open-right {
+    margin-right: 0px;
+}
+
+#page-my-index.path-my.pagelayout-mydashboard.editing #page-header .flex-wrap .singlebutton:nth-child(1) button.btn{
+    color: #000;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    margin: 0;
+    background-image: none;
 }
