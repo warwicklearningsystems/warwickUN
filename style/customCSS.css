@@ -1605,3 +1605,97 @@ body.path-mod.path-mod-book.drawer-open-right {
         height: calc(100% - 94px);
     }
 }
+
+/* Rules from Raw initial SCSS from staging 09-27 */
+
+/*1 This amends the spacing of the main menu links next to the Warwick logo*/
+ul.navbar-nav.custom-menus{
+    margin-top: 9px !important;
+    margin-left: 25px;
+}
+
+/*2 The four rules below change the display of the borders for the search box in the header and position the box vertically central */
+input#id_search_box{
+    border-radius:7px;
+}
+
+ul.navbar-nav div.search-box-input-wrapper .form-control:focus{
+    border-color: none;
+    box-shadow: none;
+    border-color: #8f959e;
+}
+
+.navbar .navbar-nav .search-box-input-wrapper.show #topsearchicon {
+    margin-top: 17px;
+}
+
+.navbar .navbar-nav .search-box .show input {
+    margin-top: 16px !important;
+}
+
+/*3 This makes sure that red message alert circles etc. in the header are hidden when you are searching */
+.navbar .navbar-nav .search-box-input-wrapper.show {
+    z-index: 1000 !important;
+}
+
+
+/*4 This adds a bigger shadow to the fixed navigation bar to help distinguish it from the main content area*/
+nav.navbar {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+}
+
+/*5 Two rules below to make the block background light blue to match the surround, add a bit of padding to align the blocks centrally*/
+
+#sidepre-blocks {
+   background: #f8f9fa;
+}
+
+
+[data-region="blocks-column"]{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+/*6 Four rules below to transform cirle tab shape into a proper tab shape, add white a border to tab to make it stand out against the scroll (P Trimmer) and give the tab a blue background on hover*/
+
+
+body.drawer-open-right #sidepreopen-control {
+    right: 313px !important;
+}
+
+
+#sidepreopen-control {
+    width: 27px !important;
+    border: 1px solid #fff;
+    border-right:none;
+    padding: 5px 0 0 5px !important;
+    border-radius: 20px 0px 0px 20px !important;
+    z-index: 2000;
+}
+
+#sidepreopen-control[aria-expanded="false"]{
+    right:0 !important;
+}
+
+#sidepreopen-control:hover {
+    box-shadow: none !important;
+    background-color: #0070D9;
+}
+
+
+/*7 Three rules below align the text centrally in the footer and make the font smaller*/
+body #top-footer .contact ul li, {
+   font-size: 1rem;
+   margin-bottom: 0px;
+}
+
+#top-footer h4{
+    display:none !important;
+}
+
+#top-footer {
+    padding: 20px 10px 40px 15px !important;
+}
