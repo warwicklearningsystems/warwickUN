@@ -6,7 +6,7 @@ if(course_activity_page.length != 0){
     document.getElementsByClassName('fixed-top navbar navbar-bootswatch navbar-dark navbar-expand moodle-has-zindex')[0].setAttribute('style','top:0');
 }
 
-/*handle Jump to top arrow  hide and display*/
+/*handle Jump to top arrow hide and display*/
 var jump_toTop=document.getElementById('scrolltoToplink');
 if (typeof(jump_toTop) != 'undefined' && jump_toTop != null) {
     document.getElementById('page-wrapper').onscroll = function() {
@@ -19,10 +19,14 @@ if (typeof(jump_toTop) != 'undefined' && jump_toTop != null) {
     }
  }
 
-
-/*handle the top bar search action */
 require(['jquery'], function($) {
 
+/*handle book bug where left side menu loads half open*/
+if ($('.drawer-open-left #nav-drawer.closed').length > 0) {
+    $('body').css('margin-left', '55px');
+}
+
+/*handle the top bar search action */
 $('#scrolltoToplink').click(function() {
           $('#page-wrapper').scrollTop(0);
         });
