@@ -1699,3 +1699,7 @@ body #top-footer .contact ul li, {
 #top-footer {
     padding: 20px 10px 40px 15px !important;
 }
+
+body ul li.list-group-item-action:focus {
+    box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%) !important;
+}
