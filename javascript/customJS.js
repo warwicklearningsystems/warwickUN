@@ -7,7 +7,9 @@ if(course_activity_page.length != 0){
 }
 
 /*handle Jump to top arrow  hide and display*/
-document.getElementById('page-wrapper').onscroll = function() {
+var jump_toTop=document.getElementById('scrolltoToplink');
+if (typeof(jump_toTop) != 'undefined' && jump_toTop != null) {
+    document.getElementById('page-wrapper').onscroll = function() {
         var jump_toTop=document.getElementById('scrolltoToplink');
         if (document.getElementById('page-wrapper').scrollTop > 200 || document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             jump_toTop.style.display = "block";
@@ -15,8 +17,9 @@ document.getElementById('page-wrapper').onscroll = function() {
             jump_toTop.style.display = "none";
         }
     }
+ }
 
- 
+
 /*handle the top bar search action */
 require(['jquery'], function($) {
 
