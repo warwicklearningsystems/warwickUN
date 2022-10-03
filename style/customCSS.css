@@ -1703,3 +1703,15 @@ body #top-footer .contact ul li, {
 body ul li.list-group-item-action:focus {
     box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%) !important;
 }
+
+/* Grid format - unable to scroll */
+#gtopics {
+    height: calc(100vh - 142px);
+    overflow-y: scroll;
+}
+
+/* Top of Actions menu still gets hidden */
+#action-menu-3-menu{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
