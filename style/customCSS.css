@@ -757,7 +757,7 @@ nav.navbar {
 }
 
 #nav-drawer-footer {
-    z-index: 999;
+    z-index: 888;
 }
 
 /* Align label activity with the icons columns */
@@ -1400,6 +1400,11 @@ a:hover {
 
 body.pagelayout-course #region-main .modtype_label a:not(.btn) {
   text-underline-offset: 3px;
+}
+
+/* Edit links underlined for Labels */
+body.pagelayout-course #region-main .modtype_label a.dropdown-item:not(.btn) {
+  text-decoration: none;
 }
 
 /* Fix Breadcrumb trail overlaps editing pop-up */

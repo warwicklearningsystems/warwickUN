@@ -21,6 +21,7 @@ if (typeof(jump_toTop) != 'undefined' && jump_toTop != null) {
 
 require(['jquery'], function($) {
 
+
 /*handle book bug where left side menu loads half open*/
 if ($('.drawer-open-left #nav-drawer.closed').length > 0) {
     $('body').css('margin-left', '55px');
@@ -48,9 +49,15 @@ $('#scrolltoToplink').click(function() {
         //$('.search-box-input-wrapper').addClass('show');
     });
     $(document).click(function(event) {
+        if ($('button.atto_fullscreen_button.highlight').length > 0) {
+            $('div.editor_atto').css({'top': '24px', 'z-index': '999'});
+        }else{
+            $('div.editor_atto').css({'top': 'auto', 'z-index': '1'});
+        }
+
         if(!$(event.target).is('nav.navbar ul.navbar-nav li, nav.navbar ul.navbar-nav *'))
         {
-            $('nav.navbar ul.navbar-nav.custom-menus li, nav.navbar ul.navbar-nav .nav-item').css('display', 'none')
+            $('nav.navbar ul.navbar-nav.custom-menus li, nav.navbar ul.navbar-nav .nav-item').css('display', 'none');
         }
     });
 });
