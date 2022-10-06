@@ -1726,3 +1726,7 @@ body.editing #gtopics {
     max-height: 80vh;
     overflow-y: scroll;
 }
+
+a:hover {
+    text-decoration: none;
+}
