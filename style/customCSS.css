@@ -1730,3 +1730,10 @@ body.editing #gtopics {
 a:hover {
     text-decoration: none;
 }
+
+/* Move activity - unable to scroll through list after clicking 4-headed arrow */
+.moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content{
+    overflow-y: scroll;
+    max-height: 90vh!important;
+}
+

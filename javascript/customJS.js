@@ -9,12 +9,14 @@ if(course_activity_page.length != 0){
 /*handle Jump to top arrow  hide and display*/
 var contentScroll=document.getElementById('page-wrapper');
 if(contentScroll){
-contentScroll.onscroll = function() {
+    contentScroll.onscroll = function() {
         var jump_toTop=document.getElementById('scrolltoToplink');
-        if (contentScroll.scrollTop > 200) {
-            jump_toTop.style.display = "block";
-        } else {
-            jump_toTop.style.display = "none";
+        if(jump_toTop){
+            if (contentScroll.scrollTop > 200) {
+                jump_toTop.style.display = "block";
+            } else {
+                jump_toTop.style.display = "none";
+            }
         }
     }
 }
