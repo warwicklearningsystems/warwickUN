@@ -1165,7 +1165,7 @@ nav.navbar .navbar-brand .logo img {
 	background-color: #0070D9!important;
 }
 body.drawer-open-left #nav-drawer-footer {
-	width: 245px;
+	width: 245px!important;
 }
 body.drawer-open-left .metismenu [data-key="course-sections"], .metismenu [data-key="mycourses"] {
 	display: inline;
@@ -1405,6 +1405,10 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 /* Edit links underlined for Labels */
 body.pagelayout-course #region-main .modtype_label a.dropdown-item:not(.btn) {
   text-decoration: none;
+}
+
+body.pagelayout-course #region-main .modtype_label a:not(.btn) {
+    text-decoration: none!important;
 }
 
 /* Fix Breadcrumb trail overlaps editing pop-up */
@@ -1710,8 +1714,9 @@ body ul li.list-group-item-action:focus {
 }
 
 /* Grid format - unable to scroll */
+/* Problem with grid format in some courses */
 #gtopics {
-    height: calc(100vh - 142px);
+    max-height: calc(100vh - 142px);
     overflow-y: scroll;
 }
 
@@ -1732,8 +1737,19 @@ a:hover {
 }
 
 /* Move activity - unable to scroll through list after clicking 4-headed arrow */
+/* Templates4U problem with position and visibility of save button */
 .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content{
     overflow-y: scroll;
     max-height: 90vh!important;
 }
 
+.moodle-dialogue-base .moodle-dialogue.moodle-dialogue-focused {
+    top: 10vh!important;
+}
+
+/* Problem with questionnaire menu view */
+@media (min-width: 1155px) {
+    #action-menu-3-menu {
+        max-height: 70vh;
+    }
+}
