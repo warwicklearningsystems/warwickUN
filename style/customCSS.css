@@ -1687,6 +1687,7 @@ body.drawer-open-right #sidepreopen-control {
 
 #sidepreopen-control[aria-expanded="false"]{
     right:0 !important;
+    z-index: 1000 !important;
 }
 
 #sidepreopen-control:hover {
