@@ -1420,18 +1420,18 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 /* Pages scroll hidden behind top menu and double scroll bars */
 #page-wrapper{
     margin-top: 94px!important;
-    overflow-y: auto!important;
+    /*overflow-y: auto!important;*/
     height: calc(100vh - 100px)!important;
 }
 
 #page{
     margin-top: 0px;
     padding-top: 10px!important;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 }
 
 body{
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 @media (max-width: 992px) {
@@ -1441,7 +1441,7 @@ body{
 }
 
 html {
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 /* Login (front page) page */
