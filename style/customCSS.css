@@ -395,10 +395,11 @@ span.pbox.effect6{
         padding: 0 0 20px 0!important;
     }
 
-    /*if you open the left menu, the scroll down doesn't work on mobile*/
+    /*if you open the left menu, the scroll down doesn't work on mobile
     body.drawer-open-left, body.drawer-open-right {
         overflow: inherit;
     }
+    revert scroll */
 }
 /*related to moove theme*/
     #top-footer h3,#top-footer > div > div > div.col-md-5.social > div > div.mobilefooter.mb-2 > a ,#top-footer > div > div > div.col-md-5.social > div > div.tool_dataprivacy.mb-2 > a {
@@ -1399,7 +1400,11 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
     z-index: 3;
 }
 
-/* Pages scroll hidden behind top menu and double scroll bars */
+#page-wrapper{
+    margin-top: 65px!important;
+}
+
+/* Pages scroll hidden behind top menu and double scroll bars 
 #page-wrapper{
     margin-top: 94px!important;
     overflow-y: auto!important;
@@ -1425,6 +1430,7 @@ body{
 html {
     overflow-y: hidden;
 }
+    revert scroll */
 
 /* Login (front page) page */
 
@@ -1697,34 +1703,36 @@ body ul li.list-group-item-action:focus {
 }
 
 /* Grid format - unable to scroll */
-/* Problem with grid format in some courses */
+/* Problem with grid format in some courses 
 #gtopics {
     max-height: calc(100vh - 142px);
     overflow-y: scroll;
 }
 
-/* Grid format - unable to scroll (Editing mode) */
+/* Grid format - unable to scroll (Editing mode) 
 body.editing #gtopics {
     max-height: 100%;
     overflow-y: unset;
 }
 
-/* Top of Actions menu still gets hidden */
+/* Top of Actions menu still gets hidden 
 #action-menu-3-menu{
     max-height: 80vh;
     overflow-y: scroll;
 }
+    revert scroll */
 
 a:hover {
     text-decoration: none;
 }
 
 /* Move activity - unable to scroll through list after clicking 4-headed arrow */
-/* Templates4U problem with position and visibility of save button */
+/* Templates4U problem with position and visibility of save button 
 .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content{
     overflow-y: scroll;
     max-height: 90vh!important;
-}
+}    revert scroll */
+
 
 .moodle-dialogue-base .moodle-dialogue.moodle-dialogue-focused {
     top: 10vh!important;
@@ -1740,4 +1748,17 @@ a:hover {
 /* Add more margin between title and tile in course grid format */
 .course-content ul.gridicons li .image_holder{
     margin-top: 5px;
+}
+
+
+/* Hides blocks column region scroll bar to avoid double bars */
+
+
+#sidepre-blocks::-webkit-scrollbar {
+  display: none!important;
+}
+
+#sidepre-blocks {
+  -ms-overflow-style: none!important;
+  scrollbar-width: none!important;
 }
