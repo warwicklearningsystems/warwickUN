@@ -758,7 +758,7 @@ nav.navbar {
 }
 
 #nav-drawer-footer {
-    z-index: 888;
+    z-index: 999;
 }
 
 /* Align label activity with the icons columns */
@@ -1660,7 +1660,7 @@ nav.navbar {
 
 
 body.drawer-open-right #sidepreopen-control {
-    right: 313px !important;
+    right: 320px !important;
 }
 
 #sidepreopen-control {
@@ -1670,7 +1670,7 @@ body.drawer-open-right #sidepreopen-control {
     padding: 5px 0 0 5px !important;
     border-radius: 20px 0px 0px 20px !important;
     /* The lug appears over the grid tile in certain scenario */
-    z-index: 1001;
+    z-index: 998;
 }
 
 #sidepreopen-control[aria-expanded="false"]{
