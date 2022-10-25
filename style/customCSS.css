@@ -538,7 +538,7 @@ nav.navbar .drawer-toggle .nav-link {
     width: 50px;
     bottom: 20px;
     right: 19px;
-    z-index: 1000;
+    z-index: 2;
     font-size: large;
     border: none;
     outline: none;
@@ -747,12 +747,13 @@ body.hasaccessibilitybar #accessibilitybar .container {
     height: calc(100% - 144px)!important;
 }
 
+/*
 [data-region="blocks-column"], [data-region=right-hand-drawer].drawer {
     top: 94px;
     padding-top: 8px;
     height: calc(100vh - 100px);
 }
-
+*/
 nav.navbar {
     top: 24px!important;
 }
@@ -1453,7 +1454,7 @@ html {
     background-color: #edf5f8;
     margin-top: 0px;
     padding-top: 0px!important;
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 
 #top-footer{
@@ -1544,8 +1545,10 @@ html {
 
 /* fix last issues */
 
-body.hasaccessibilitybar:not(.notloggedin) [data-region="blocks-column"], body.hasaccessibilitybar:not(.notloggedin) [data-region=right-hand-drawer].drawer {
-    top: 95px;
+
+[data-region="blocks-column"], [data-region=right-hand-drawer].drawer {
+    top: 94px;
+
 }
 
 .path-course.path-course-view .usertour{
@@ -1596,10 +1599,16 @@ body.path-mod.path-mod-book.drawer-open-right {
     background: transparent;
 }
 
-/* Can't access chat message box */
-@media (max-width: 500px) {
-    .drawer .message-app {
-        height: calc(100% - 94px);
+.drawer > div.message-app {
+    height: calc(100% - 25px)!important;
+}
+
+@media (max-width: 767px) {
+    body .message-app .footer-container {
+        top: -93px;
+    }
+    .message-app .view-conversation {
+        height: calc(100% - 90px)!important;
     }
 }
 
@@ -1702,48 +1711,17 @@ body ul li.list-group-item-action:focus {
     box-shadow: 0 0 0 0.2rem rgb(15 108 191 / 75%) !important;
 }
 
-/* Grid format - unable to scroll */
-/* Problem with grid format in some courses 
-#gtopics {
-    max-height: calc(100vh - 142px);
-    overflow-y: scroll;
-}
-
-/* Grid format - unable to scroll (Editing mode) 
-body.editing #gtopics {
-    max-height: 100%;
-    overflow-y: unset;
-}
-
-/* Top of Actions menu still gets hidden 
-#action-menu-3-menu{
-    max-height: 80vh;
-    overflow-y: scroll;
-}
-    revert scroll */
 
 a:hover {
     text-decoration: none;
 }
 
-/* Move activity - unable to scroll through list after clicking 4-headed arrow */
-/* Templates4U problem with position and visibility of save button 
-.moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content{
-    overflow-y: scroll;
-    max-height: 90vh!important;
-}    revert scroll */
 
 
 .moodle-dialogue-base .moodle-dialogue.moodle-dialogue-focused {
     top: 10vh!important;
 }
 
-/* Problem with questionnaire menu view */
-@media (min-width: 1155px) {
-    #action-menu-3-menu {
-        max-height: 70vh;
-    }
-}
 
 /* Add more margin between title and tile in course grid format */
 .course-content ul.gridicons li .image_holder{
