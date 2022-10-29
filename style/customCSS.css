@@ -395,11 +395,6 @@ span.pbox.effect6{
         padding: 0 0 20px 0!important;
     }
 
-    /*if you open the left menu, the scroll down doesn't work on mobile
-    body.drawer-open-left, body.drawer-open-right {
-        overflow: inherit;
-    }
-    revert scroll */
 }
 /*related to moove theme*/
     #top-footer h3,#top-footer > div > div > div.col-md-5.social > div > div.mobilefooter.mb-2 > a ,#top-footer > div > div > div.col-md-5.social > div > div.tool_dataprivacy.mb-2 > a {
@@ -1402,38 +1397,9 @@ body.pagelayout-course #region-main .modtype_label a:not(.btn) {
 }
 
 #page-wrapper{
-    margin-top: 65px!important;
+    margin-top: 0px!important;
+    padding-top: 60px!important;
 }
-
-/* Pages scroll hidden behind top menu and double scroll bars 
-#page-wrapper{
-    margin-top: 94px!important;
-    overflow-y: auto!important;
-    height: calc(100vh - 100px)!important;
-}
-
-#page{
-    margin-top: 0px;
-    padding-top: 10px!important;
-    overflow-y: auto;
-}
-
-body{
-    overflow-y: hidden;
-}
-
-@media (max-width: 992px) {
-    #page-wrapper{
-        height: 100vh!important;
-    }
-}
-
-html {
-    overflow-y: hidden;
-}
-    revert scroll */
-
-/* Login (front page) page */
 
 #page-site-index.path-site.pagelayout-frontpage .frontpage-warwick-img-card {
     width: 75%;
@@ -1557,6 +1523,7 @@ html {
 
 body.hasaccessibilitybar:not(.notloggedin) #page {
     margin-top: 0px;
+    min-height: calc(100vh - 214px);
 }
 
 
@@ -1729,14 +1696,12 @@ a:hover {
 }
 
 
-/* Hides blocks column region scroll bar to avoid double bars */
-
-
-#sidepre-blocks::-webkit-scrollbar {
-  display: none!important;
+div.alert div.alert{
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
-#sidepre-blocks {
-  -ms-overflow-style: none!important;
-  scrollbar-width: none!important;
+div.alert i{
+    font-size: 18px;
+    margin-top: 2px;
 }
