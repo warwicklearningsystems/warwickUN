@@ -1705,3 +1705,8 @@ div.alert i{
     font-size: 18px;
     margin-top: 2px;
 }
+
+/* remove underline from some links */
+body.pagelayout-incourse #region-main a:not(.btn), body.pagelayout-incourse .section-navigation > a:not(.btn) {
+    text-decoration: none;
+}
