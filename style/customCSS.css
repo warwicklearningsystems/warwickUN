@@ -1572,10 +1572,13 @@ body.path-mod.path-mod-book.drawer-open-right {
 
 @media (max-width: 767px) {
     body .message-app .footer-container {
-        top: -93px;
+        top: -75px;
     }
     .message-app .view-conversation {
-        height: calc(100% - 90px)!important;
+        height: calc(100% - 72px)!important;
+    }
+    .message-app .message.send {
+    overflow-x: hidden;
     }
 }
 
