@@ -1572,7 +1572,7 @@ body.path-mod.path-mod-book.drawer-open-right {
 
 @media (max-width: 767px) {
     body .message-app .footer-container {
-        top: -75px;
+        top: -70px;
     }
     .message-app .view-conversation {
         height: calc(100% - 72px)!important;
@@ -1712,4 +1712,10 @@ div.alert i{
 /* remove underline from some links */
 body.pagelayout-incourse #region-main a:not(.btn), body.pagelayout-incourse .section-navigation > a:not(.btn) {
     text-decoration: none;
+}
+
+/* fix messages */
+
+body.hasaccessibilitybar:not(.notloggedin) [data-region="blocks-column"], body.hasaccessibilitybar:not(.notloggedin) [data-region=right-hand-drawer].drawer {
+    top: 94px;
 }

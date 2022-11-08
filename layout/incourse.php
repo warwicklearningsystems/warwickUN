@@ -61,7 +61,7 @@ if (isset($PAGE->cm->modname) && $themesettings->imersivecoursemode) {
     $extraclasses[] = 'moove-immersive-mode';
 }
 
-$moduleswithnavinblocks = ['book', 'quiz'];
+$moduleswithnavinblocks = [];
 
 if (isset($PAGE->cm->modname) && in_array($PAGE->cm->modname, $moduleswithnavinblocks)) {
     $navdraweropen = false;
