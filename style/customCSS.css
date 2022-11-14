@@ -1719,3 +1719,20 @@ body.pagelayout-incourse #region-main a:not(.btn), body.pagelayout-incourse .sec
 body.hasaccessibilitybar:not(.notloggedin) [data-region="blocks-column"], body.hasaccessibilitybar:not(.notloggedin) [data-region=right-hand-drawer].drawer {
     top: 94px;
 }
+
+/* Adds horizontal scroll to table in Quiz */
+#responseform .content .qtext table {
+display: block;
+overflow-x: scroll;
+}
+
+#responseform ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 10px;
+}
+
+#responseform ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
