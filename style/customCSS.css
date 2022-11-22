@@ -1108,6 +1108,19 @@ nav.navbar *:focus-visible{
 
 /*"Font Size" on mobile, appears out of space*/
 @media (max-width: 440px) {
+
+    #page-my-index #page-header .card-body .mr-auto {
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: fill-available;
+    }
+
+    #page-my-index #page-header .card-body .page-header-headings {
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: fill-available;
+    }
+
     #accessibilitybar .container span {
         font-size: 13px!important;
         margin: auto!important;
