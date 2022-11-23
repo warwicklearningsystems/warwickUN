@@ -28,6 +28,14 @@
             <h3>{{#str}}stayintouch, theme_moove{{/str}}</h3>
             <h4>{{{getintouchcontent}}}</h4>
             <ul>
+                {{# output.page_doc_link }}
+                    <li>
+                        <p class="helplink">{{{ output.page_doc_link }}}</p>
+                    </li>
+                {{/ output.page_doc_link }}
+                <li>
+                    <div class="tool_usertours-resettourcontainer"></div>
+                </li>
                 {{#website}}
                     <li>
                         <i class="slicon-globe"></i>

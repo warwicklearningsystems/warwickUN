@@ -1749,3 +1749,16 @@ overflow-x: scroll;
     border-radius: 5px;
     border: 1px solid #ffffff;
 }
+
+/* Style footer help and doc link */
+#top-footer .helplink .icon {
+    margin-left: 0px;
+    color: #455a64;
+    font-size: 19px;
+    padding-right: 3px;
+    padding-bottom: 4px;
+}
+
+#top-footer .helplink {
+    margin-bottom: 0px;
+}
