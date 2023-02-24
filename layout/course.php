@@ -79,6 +79,7 @@ $templatecontext = [
 
 
 
+
  $updtcontext = context_course::instance($COURSE->id, IGNORE_MISSING);
  $canupdatecourse = has_capability('moodle/course:update', $updtcontext);
 
@@ -93,9 +94,9 @@ $templatecontext = [
        $hiddencoursemsg = get_string('thiscourseishiddencap', 'theme_moove');
      }
    }
+   $templatecontext['ishiddencourse'] = array("ishiddenmessage"=>$hiddencoursemsg);
  }
 
-$templatecontext['ishiddencourse'] = array("ishiddenmessage"=>$hiddencoursemsg);
 
 
 // Improve boost navigation.
