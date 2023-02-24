@@ -354,3 +354,10 @@ $string['qtd'] = 'Quantity';
 
 $string['hvpcss'] = 'H5P CSS';
 $string['hvpcss_desc'] = 'Custom CSS code to be applied on H5P activities';
+
+
+
+$string['thiscourseishidden'] = 'This course is currently hidden from students. You can make the course visible via: ';
+$string['thiscourseishiddenlink'] = 'Course settings';
+
+$string['thiscourseishiddencap'] = 'This course is currently hidden from students.';
