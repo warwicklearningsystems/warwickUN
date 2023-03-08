@@ -76,6 +76,29 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu)
 ];
 
+
+
+
+
+ $updtcontext = context_course::instance($COURSE->id, IGNORE_MISSING);
+ $canupdatecourse = has_capability('moodle/course:update', $updtcontext);
+
+ // Is this course hidden?
+ if ( (strpos($PAGE->url, '/course/view.php') == true)) {
+   if ($COURSE->visible == true) {
+     $coursevisible = "TRUE";
+   } else {
+     if ($canupdatecourse) {
+       $hiddencoursemsg = get_string('thiscourseishidden', 'theme_moove') . '<a href="' . $CFG->wwwroot . '/course/edit.php?d=3&id=' . $COURSE->id . '">' . get_string('thiscourseishiddenlink', theme_moove) . '</a>';
+     } else {
+       $hiddencoursemsg = get_string('thiscourseishiddencap', 'theme_moove');
+     }
+   }
+   $templatecontext['ishiddencourse'] = array("ishiddenmessage"=>$hiddencoursemsg);
+ }
+
+
+
 // Improve boost navigation.
 theme_moove_extend_flat_navigation($PAGE->flatnav);
 
