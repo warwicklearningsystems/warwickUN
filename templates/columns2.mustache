@@ -68,6 +68,16 @@
                             {{#hasregionmainsettingsmenu}}
                                 <div class="region_main_settings_menu_proxy"></div>
                             {{/hasregionmainsettingsmenu}}
+
+                            {{#ishiddencourse.ishiddenmessage}}
+                            <div class="course-information-header">
+                                <div class="alert alert-warning alert-block fade in " role="alert" tabindex="0">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i> {{{ishiddencourse.ishiddenmessage}}}
+                                </div>
+                            </div>
+                            {{/ishiddencourse.ishiddenmessage}}
+
                             {{{ output.course_content_header }}}
                             {{{ output.main_content }}}
                             {{{ output.course_content_footer }}}
